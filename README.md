@@ -1,7 +1,7 @@
 
 # Sistema de Agendamento de Consultas
 
-Este projeto é um sistema de agendamento de consultas médicas, desenvolvido com Node.js e MongoDB. O sistema permite que os usuários cadastrem consultas, visualizem as consultas agendadas, pesquisem por consultas específicas e recebam notificações por e-mail antes das consultas ocorrerem.
+Este projeto é um sistema de agendamento de consultas, desenvolvido com Node.js e MongoDB. O sistema permite que os usuários cadastrem consultas, visualizem as consultas agendadas, pesquisem por consultas específicas e recebam notificações por e-mail antes das consultas ocorrerem.
 
 ## Funcionalidades
 
