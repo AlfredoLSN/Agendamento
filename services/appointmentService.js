@@ -81,11 +81,11 @@ class AppointmentService{
         var appos = await this.GetAll(false);
         
         var transporter = mailer.createTransport({
-            host: "sandbox.smtp.mailtrap.io",
-            port: 2525,
+            host: "host",
+            port: "porta",
             auth: {
-                user: "6d3691865cd366",
-                pass: "1eaa278367ff0c"
+                user: "user",
+                pass: "password"
             }
         });
 
@@ -98,15 +98,15 @@ class AppointmentService{
                 await Appo.findByIdAndUpdate(appo.id, {notified: true})
                 if(!appo.notified){
                     transporter.sendMail({
-                        from: "Alfredo Lucas <alfredolsn@hotmail.com>",
+                        from: "Name <email>",
                         to: appo.email,
                         subject: "Consulta",
                         text: "Sua consulta vai acontecer em 1 hora!"
                     }).then(() => {
-
+                        console.log("Email Enviado!");
                     }).catch(err => {
                         console.log(err);
-                    })
+                    });
                 }
             }
         })
